@@ -1,0 +1,84 @@
+
+    /*private void setValueButton(int idxBb,int row,int col,int idxButt){
+        if(firstClick){
+            if(indexButtonBlank == idxBb){
+                firstButton[row][col] = 0;
+            }
+            else {
+                firstButton[row][col] = Integer.parseInt(buttons.get(idxButt).getText().toString());
+            }
+            rowFirst = row;
+            colFirst = col;
+            firstClick = false;
+        }
+        else{
+            if(indexButtonBlank == idxBb){
+                secondButton[row][col] = 0;
+            }else {
+                secondButton[row][col] = Integer.parseInt(buttons.get(idxButt).getText().toString());
+            }
+            swap(rowFirst,colFirst,row,col);
+            firstClick = true;
+        }
+    }*/
+
+
+ /* if(firstButton[row1][col1] == 0){
+            valTemp = secondButton[row2][col2];
+            secondButton[row2][col2] = 0;
+            firstButton[row1][col1] = valTemp;
+            switching(row1,col1,firstButton);
+            switching(row2,col2,secondButton);
+        }
+        else{
+            valTemp = firstButton[row2][col2];
+            firstButton[row2][col2] = 0;
+            secondButton[row1][col1] = valTemp;
+            switching(row1,col1,firstButton);
+            switching(row2,col2,secondButton);
+        }*/
+
+
+/*private void switching(int row, int col, int butt[][]){
+        String value;
+        int index = 0;
+
+        if(butt[row][col] == 0){
+            value = "-";
+        }
+        else value = String.valueOf(butt[row][col]);
+        rows.get(row).getIndex(col).setText(value);
+    }
+
+    private boolean swap(int row1, int col1, int row2, int col2){
+        int valTemp;
+        boolean swaped = false;
+
+        if(row1 == row2){
+            if(!(Math.abs(col1-col2) == 1)) return swaped;
+        }
+        else if(col1 == col2 && row1 != row2){
+            if(!(Math.abs(row1-row2) == 1)) return swaped;
+        }
+        else if(col1 != col2 && row1 != row2) return swaped;
+
+        valTemp = fullButton[row2][col2];
+        fullButton[row2][col2] = 0;
+        emptyButton[row1][col1] = valTemp;
+        switching(row1,col1,emptyButton);
+        switching(row2,col2,fullButton);
+        swaped = true;
+        return swaped;
+    }
+
+    private void setValueButton(int idxBb,int row,int col,int idxButt){
+        if(indexButtonBlank == idxBb) return;
+        else{
+            fullButton[row][col] = Integer.parseInt(buttons.get(idxButt).getText().toString());
+        }
+        if(swap(rowFirst,colFirst,row,col)){
+            rowFirst = row;
+            colFirst = col;
+            indexButtonBlank = idxBb;
+        }
+    }*/

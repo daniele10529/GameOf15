@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:padding="5dp"
+        android:background="#6495ED">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif-medium"
+            android:textAlignment="center"
+            android:textColor="@color/purple_700"
+            android:textSize="28dp"
+            android:text="Il Gioco del 15">
+        </TextView>
+    </FrameLayout>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="382dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_height="wrap_content"
+                android:layout_margin="10px"
+                android:width="40dp"
+                android:height="56dp"
+                android:background="#17DA3B"
+                android:backgroundTint="#4CAF50"
+                android:text=""
+                android:onClick="btn1_onClick"
+                android:textSize="24dp"
+                app:strokeColor="#4CAF50"></Button>
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_height="wrap_content"
+                android:layout_margin="10px"
+                android:width="40dp"
+                android:height="56dp"
+                android:background="#17DA3B"
+                android:text=""
+                android:onClick="btn2_onClick"
+                android:textSize="24dp"
+                app:strokeColor="#4CAF50"></Button>
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_height="wrap_content"
+                android:layout_margin="10px"
+                android:width="40dp"
+                android:height="56dp"
+                android:background="#17DA3B"
+                android:text=""
+                android:onClick="btn3_onClick"
+                android:textSize="24dp"
+                app:strokeColor="#4CAF50"></Button>
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_height="wrap_content"
+                android:layout_margin="10px"
+                android:width="40dp"
+                android:height="56dp"
+                android:background="#17DA3B"
+                android:text=""
+                android:onClick="btn4_onClick"
+                android:textSize="24dp"
+                app:strokeColor="#4CAF50"></Button>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/btn5"
+                android:layout_height="wrap_content"
+                android:layout_margin="10px"
+                android:width="40dp"
+                android:height="56dp"
+                android:background="#17DA3B"
+                android:backgroundTint="#4CAF50"
+                android:text=""
+                android:onClick="btn5_onClick"
+                android:textSize="24dp"
+                app:strokeColor="#4CAF50"></Button>
+
+            <Button
+                android:id="@+id/btn6"
+                android:layout_height="wrap_content"
+                android:layout_margin="10px"
+                android:width="40dp"
+                android:height="56dp"
+                android:background="#17DA3B"
+                android:text=""
+                android:onClick="btn6_onClick"
+                android:textSize="24dp"
+                app:strokeColor="#4CAF50"></Button>
+
+            <Button
+                android:id="@+id/btn7"
+                android:layout_height="wrap_content"
+                android:layout_margin="10px"
+                android:width="40dp"
+                android:height="56dp"
+                android:background="#17DA3B"
+                android:text=""
+                android:onClick="btn7_onClick"
+                android:textSize="24dp"
+                app:strokeColor="#4CAF50"></Button>
+
+            <Button
+                android:id="@+id/btn8"
+                android:layout_height="wrap_content"
+                android:layout_margin="10px"
+                android:width="40dp"
+                android:height="56dp"
+                android:background="#17DA3B"
+                android:text=""
+                android:onClick="btn8_onClick"
+                android:textSize="24dp"
+                app:strokeColor="#4CAF50"></Button>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/btn9"
+                android:layout_height="wrap_content"
+                android:layout_margin="10px"
+                android:width="40dp"
+                android:height="56dp"
+                android:background="#17DA3B"
+                android:backgroundTint="#4CAF50"
+                android:text=""
+                android:onClick="btn9_onClick"
+                android:textSize="24dp"
+                app:strokeColor="#4CAF50"></Button>
+
+            <Button
+                android:id="@+id/btn10"
+                android:layout_height="wrap_content"
+                android:layout_margin="10px"
+                android:width="40dp"
+                android:height="56dp"
+                android:background="#17DA3B"
+                android:text=""
+                android:onClick="btn10_onClick"
+                android:textSize="24dp"
+                app:strokeColor="#4CAF50"></Button>
+
+            <Button
+                android:id="@+id/btn11"
+                android:layout_height="wrap_content"
+                android:layout_margin="10px"
+                android:width="40dp"
+                android:height="56dp"
+                android:background="#17DA3B"
+                android:text=""
+                android:onClick="btn11_onClick"
+                android:textSize="24dp"
+                app:strokeColor="#4CAF50"></Button>
+
+            <Button
+                android:id="@+id/btn12"
+                android:layout_height="wrap_content"
+                android:layout_margin="10px"
+                android:width="40dp"
+                android:height="56dp"
+                android:background="#17DA3B"
+                android:onClick="btn12_onClick"
+                android:text=""
+                android:textSize="24dp"
+                app:strokeColor="#4CAF50"></Button>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/btn13"
+                android:layout_height="wrap_content"
+                android:layout_margin="10px"
+                android:width="40dp"
+                android:height="56dp"
+                android:background="#17DA3B"
+                android:backgroundTint="#4CAF50"
+                android:text=""
+                android:onClick="btn13_onClick"
+                android:textSize="24dp"
+                app:strokeColor="#4CAF50"></Button>
+
+            <Button
+                android:id="@+id/btn14"
+                android:layout_height="wrap_content"
+                android:layout_margin="10px"
+                android:width="40dp"
+                android:height="56dp"
+                android:background="#17DA3B"
+                android:text=""
+                android:onClick="btn14_onClick"
+                android:textSize="24dp"
+                app:strokeColor="#4CAF50"></Button>
+
+            <Button
+                android:id="@+id/btn15"
+                android:layout_height="wrap_content"
+                android:layout_margin="10px"
+                android:width="40dp"
+                android:height="56dp"
+                android:background="#17DA3B"
+                android:onClick="btn15_onClick"
+                android:text=""
+                android:textSize="24dp"
+                app:strokeColor="#4CAF50"></Button>
+
+            <Button
+                android:id="@+id/btn16"
+                android:layout_height="wrap_content"
+                android:layout_margin="10px"
+                android:width="40dp"
+                android:height="56dp"
+                android:background="#17DA3B"
+                android:onClick="btn16_onClick"
+                android:text=""
+                android:textSize="24dp"
+                app:strokeColor="#4CAF50"></Button>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btnNew"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:onClick="btnNew_onClick"
+        android:text="New Game" />
+
+</LinearLayout>
