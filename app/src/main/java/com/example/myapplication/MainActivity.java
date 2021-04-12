@@ -5,22 +5,35 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.view.View;
 import java.util.ArrayList;
-import android.app.AlertDialog;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
     private ArrayList<Button> buttons = new ArrayList<>();
     private ArrayList<Columns> rows = new ArrayList<>();
     private Game game;
-    public AlertDialog.Builder alertBuild;
+    private TextView textGo;
 
+    //@mipmap/ic_launcher
+    //@mipmap/ic_launcher_round
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        alertBuild = new AlertDialog.Builder(this);
     }
 
+    public void test(View v){
+        for(int i = 0; i <= 15; i++){
+            if(i == 15) buttons.get(i).setText("-");
+            else buttons.get(i).setText(String.valueOf(i+1));
+        }
+    }
+
+    public void gameOver(){
+        if(game.gameComplete()){
+            textGo.setText("Complimenti puzzle risolto...!!");
+        }
+    }
     private void buttonDefine(){
         buttons.clear();
         rows.clear();
@@ -62,14 +75,16 @@ public class MainActivity extends AppCompatActivity {
         game.setIndexButtonBlank(16);
         game.setRowFirst(3);
         game.setColFirst(3);
+
+        textGo = findViewById(R.id.txtGameOver);
+        textGo.setText("");
     }
 
     public void btn16_onClick(View v){
         game.setValueButton(16,3,3,15);
+        gameOver();
     }
-    public void btn15_onClick(View v){
-        game.setValueButton(15,3,2,14);
-    }
+    public void btn15_onClick(View v){ game.setValueButton(15,3,2,14); }
     public void btn14_onClick(View v){
         game.setValueButton(14,3,1,13);
     }

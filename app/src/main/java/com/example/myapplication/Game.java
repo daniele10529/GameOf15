@@ -3,7 +3,6 @@ package com.example.myapplication;
 import android.widget.Button;
 import java.util.ArrayList;
 import java.util.Random;
-import java.util.stream.IntStream;
 
 public class Game {
 
@@ -107,38 +106,32 @@ public class Game {
             colFirst = col;
             indexButtonBlank = idxBb;
         }
-
-        if(gameComplete()){
-           System.out.println("fatto");
-        }
-
     }
 
-    private boolean gameComplete(){
+    public boolean gameComplete(){
         boolean complete = false;
-        int[] val = new int[16];
-        int a = 0;
+        int val = 0;
+        int count = 1;
 
         for(int i = 0; i <= 3; i++){
             for(int j = 0; j <= 3; j++){
                 if(rows.get(i).getIndex(j).getText().equals("-")){
-                    val[a] = 0;
-                    a++;
+                    val = 0;
                 }
                 else{
-                    val[a] = Integer.parseInt(rows.get(i).getIndex(j).getText().toString());
-                    a++;
+                    val = Integer.parseInt(rows.get(i).getIndex(j).getText().toString());
                 }
+                if(!(val == count) && !(count == 16)){
+                    complete = false;
+                    break;
+                }
+                else {
+                    complete = true;
+                }
+                count ++;
             }
         }
 
-        for(int i = 0; i < 15; i++){
-            if(val[i] != i+1){
-                complete = false;
-                break;
-            }
-            else complete = true;
-        }
         return complete;
     }
 
